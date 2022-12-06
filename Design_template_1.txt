@@ -1,0 +1,26 @@
+#This is a template for a phenotype table for samples bbeing run with the DGE script for excerpt.
+#Additionnal columns for any covariables can be added, such as sex, replicate, subtype, etc. Anything that can be useful for analysis and could help explain variability. 
+#Please do not use numbers as prefixes for samples. The Condition Column cannot be renamed. 
+#Sample names must be identifiable in sequencing files. See simi for filenames. 
+Sample_ID	Condition
+L122-1-RNA-Lung-combo_S17_ME_L001_R1_001_trimmed	Responder
+L125-1-RNA-Lung-combo_S16_ME_L001_R1_001_trimmed	Progression
+L131-1-RNA-Lung-combo_S4_ME_L001_R1_001_trimmed	Responder
+L153-1-RNA-Lung-combo_S5_ME_L001_R1_001_trimmed	Responder
+L193-1-RNA-Lung-combo_S7_ME_L001_R1_001_trimmed	Responder
+L213-1-RNA-Lung-combo_S9_ME_L001_R1_001_trimmed	Responder
+L217-1-RNA-Lung-combo_S1_ME_L001_R1_001_trimmed	Responder
+L235-1-RNA-Lung-combo_S6_ME_L001_R1_001_trimmed	Progression
+L243-1-RNA-Lung-combo_S2_ME_L001_R1_001_trimmed	Progression
+L292-1-RNA-Lung-combo_S16_ME_L001_R1_001_trimmed	Responder
+L295-1-RNA-Lung-combo_S17_ME_L001_R1_001_trimmed	Progression
+L296-1-RNA-Lung-combo_S18_ME_L001_R1_001_trimmed	Responder
+L309-1-RNA-Lung-combo_S15_ME_L001_R1_001_trimmed	Responder
+L32-1-RNA-Lung-combo_S7_ME_L001_R1_001_trimmed	Progression
+L52-1-RNA-Lung-combo_S3_ME_L001_R1_001_trimmed	Progression
+L67-1-RNA-Lung-combo_S9_ME_L001_R1_001_trimmed	Responder
+L97-1-RNA-Lung-combo_S2_ME_L001_R1_001_trimmed	Responder
+TMH-020-RNA-Lung-combo_S15_ME_L001_R1_001_trimmed	Progression
+TMH-1-1-RNA-Lung-combo_S13_ME_L001_R1_001_trimmed	Responder
+TMH-11-1-RNA-Lung-combo_S11_ME_L001_R1_001_trimmed	Progression
+TMH-8-1-RNA-Lung-combo_S10_ME_L001_R1_001_trimmed	Progression
