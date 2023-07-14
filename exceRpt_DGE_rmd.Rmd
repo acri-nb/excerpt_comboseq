@@ -32,6 +32,9 @@ if(length(args) < 5){
   design <- read.table(args[2], sep = "\t", header = T, row.names = 1)
   #design <- design[order(rownames(design)),,drop=FALSE]
   total <- total[,colnames(total) %in% rownames(design)]
+  total <- as.data.frame(total)[, rownames(design)]
+  total <- as.matrix(total)
+  
   nsamples <- dim(design)[1]
   filt <- as.integer(args[3])
   
@@ -130,7 +133,7 @@ Our default threshold for significance is 0.05, which can also be changed when a
 fit <- glmFit(DGEobj,design.matrix)
 design.matrix
 
-#coef choose what coficient , in this case 2 is Control x adenocarcioma, and 3 is Control x COPD
+#coef choose what coficient , in most simple designs coef = 2, but this will need to be changed on-the-fly for more complex experiments. Comparing models is also encouraged
 res <- glmLRT(fit,coef=2)
 #generates a table of DE results for all genes after filtering
 final <- topTags(res,n=nrow(DGEobj$counts))

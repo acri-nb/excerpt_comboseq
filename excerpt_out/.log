@@ -1,0 +1,833 @@
+2022-10-18--18:45:57 exceRpt_smallRNA: BEGIN exceRpt smallRNA-seq pipeline v.4.6.3 for sample 
+======================
+
+2022-10-18--18:45:57 exceRpt_smallRNA: Created results dir: /exceRptOutput/
+
+======================
+
+2022-10-18--18:45:57 exceRpt_smallRNA: Processing adapter sequence:
+
+2022-10-18--18:45:57 exceRpt_smallRNA: echo AAAAAAAA > /exceRptOutput//.adapterSeq
+
+======================
+
+2022-10-18--18:45:57 exceRpt_smallRNA: Guessing encoding of fastq read-qualities:
+
+2022-10-18--18:45:57 exceRpt_smallRNA: cat /exceRptInput/ | head -n 40000 | awk '{if(NR%4==0) printf(%s,/bin/sh);}' | od -A n -t u1 | grep -v ^* | awk 'BEGIN{min=100;max=0;}{for(i=1;i<=NF;i++) {if(>max) max=; if(<min) min=;}}END{if(max<84) print 33; else print 64;}' > /exceRptOutput//.qualityEncoding
+
+2022-10-18--18:45:57 exceRpt_smallRNA: Finished guessing encoding of fastq read-qualities:
+
+======================
+
+2022-10-18--18:45:57 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 18:45:58  Searching for best of 161 potential adapter sequences
+2022/10/18 18:45:58  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--18:53:58 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 18:53:58  Searching for best of 161 potential adapter sequences
+2022/10/18 18:53:58  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:01 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:01  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:01  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:02 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:02  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:02  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:02 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:02  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:02  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:03 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:03  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:03  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:04 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:04  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:04  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:04 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:04  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:04  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:05 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:05  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:05  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:06 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:06  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:06  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:07 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:07  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:07  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:07 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:07  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:07  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:08 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:08  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:08  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:09 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:09  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:09  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:10 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:10  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:10  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:10 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:10  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:10  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:11 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:11  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:11  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:12 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:12  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:12  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:12 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:13  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:13  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:13 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:13  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:13  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:14 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:14  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:14  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:15 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:15  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:15  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:15 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:16  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:16  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:16 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:16  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:16  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:17 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:17  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:17  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:18 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:18  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:18  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:18 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:18  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:18  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:19 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:19  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:19  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:20 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:20  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:20  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:20 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:21  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:21  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:21 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:21  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:21  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:22 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:22  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:22  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:23 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:23  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:23  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:23 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:23  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:23  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:24 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:24  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:24  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:25 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:25  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:25  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:25 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:25  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:25  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:07:26 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:07:26  Searching for best of 161 potential adapter sequences
+2022/10/18 19:07:26  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:31 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:31  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:31  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:32 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:32  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:32  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:32 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:33  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:33  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:33 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:33  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:33  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:34 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:34  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:34  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:35 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:35  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:35  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:35 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:35  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:35  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:36 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:36  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:36  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:37 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:37  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:37  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:37 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:38  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:38  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:38 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:38  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:38  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:39 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:39  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:39  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:40 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:40  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:40  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:40 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:40  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:40  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:41 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:41  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:41  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:42 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:42  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:42  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:42 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:42  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:42  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:43 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:43  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:43  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:44 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:44  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:44  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:44 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:45  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:45  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:45 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:45  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:45  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:46 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:46  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:46  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:47 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:47  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:47  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:47 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:47  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:47  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:48 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:48  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:48  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:49 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:49  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:49  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:49 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:49  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:49  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:50 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:50  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:50  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:51 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:51  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:51  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:51 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:52  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:52  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:52 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:52  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:52  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:53 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:53  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:53  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:54 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:54  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:54  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:54 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:54  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:54  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:55 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:55  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:55  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
+======================
+
+2022-10-18--19:09:56 exceRpt_smallRNA: Checking adapter against known sequences: cat /exceRptInput/ 2>> /exceRptOutput/.err | java -Xmx10G -jar /exceRpt_bin/exceRpt_Tools.jar FindAdapter -n 1000 -m 100000 -s 4 -a /exceRpt_DB/adapters/adapters.fa - > /exceRptOutput//.knownAdapterSeq 2>> /exceRptOutput/.log
+
+2022/10/18 19:09:56  Searching for best of 161 potential adapter sequences
+2022/10/18 19:09:56  
+Exception in thread "main" java.lang.NullPointerException
+	at fastqTools.SequenceReader.readNextRecord(SequenceReader.java:66)
+	at fastqTools.FindAdapter.guessAdapterUsingReads(FindAdapter.java:94)
+	at fastqTools.FindAdapter.main(FindAdapter.java:372)
+	at main.ExceRpt_Tools.main(ExceRpt_Tools.java:94)
